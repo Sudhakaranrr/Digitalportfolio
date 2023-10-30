@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <title>Your Name - Portfolio</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color:dimgray;
+        }
+
+  header  {   
+         background-color: black;
+         color: aliceblue;
+         text-align: center;
+         padding: 20px;
+         position:relative;/*Add this */ 
+  }
+  
+  .header-content h1 {
+      font-size: 36px;
+  }
+  
+  /* add styles for the round profile picture */
+  .profile-picture {
+      width: 120px; /* Adjust the size as needed */
+      height:125px;
+      border-radius: :75%; /* create a circular shape */
+      object-fit:cover; /* To ensure the image fills the circular area */
+      position:absolute; /* Add this */
+      top:0px; /* Adjust top position as needed */
+      left:1px; /*Adjust left position as needed */
+    
+    
+
+  }
+
+   ul 
+   {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+  }
+
+  ul  :hover {
+    color:gold;
+  }
+
+  ul{
+    background-color:darkred;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+
+
+  
+  
+  ul {
+    list-style-type: none;
+  }
+  
+
+  
+  <nav u1 {
+      list-style: none;
+      color: #fff;
+      
+  } 
+  
+  nav u1 li {
+    display: inline;
+    margin:0 20px;
+  }
+  nav ul li a {
+
+    text-decoration: none;
+    color: #fff;
+    
+    border-bottom: 3px solid transparent;
+    </nav>
+  
+  }
+  
+  
+  
+  .section-content {
+    background-color: #fff;
+    background-image:url(sudhakaran2.jpg);
+    padding:2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: #333(0,0,0,1);
+  }  
+
+
+  .download-button  {
+     background-color: #333;
+     color: #fff;
+     padding:0.5rem 1rem;
+     text-decoration: none;
+     border-radius: 20px;
+     display: inline-block;
+     margin-top: 10px;
+
+  }
+
+  .download-button:hover {
+     background-color:gold;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-colorn: #333;
+    color: #fff;
+  }
+
+  ui {
+      list-style-type: disc;
+      padding-left: 20px;
+  }
+ </style>
+ </head>
+</body> 
+
+  
+
+<header>
+    <div class="header-content">
+        <img src="SUD.jpg" alt="your profile picture" class="profile-picture">
+        </h1>SUDHAKARAN R</h1>
+        <p>SOFTWARE DEVELOPER</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Special Activity">Special activity</a></li>
+        <li><a href="#Resume">Resume</a></li>
+    </ul> 
+</nav>       
+    
+
+<section id="About">
+    <div class="section-content">
+        <h2>About Me</h2>
+        <li>HELLO EVERYONE THIS IS SUDHAKARAN R AND IAM A COMPUTER SCIENCE STUDENT </li>
+         <p> SOFTWARE DEVELOPER</p>
+        
+        
+        </div>
+   </section>
+   
+   <section id="Education">
+    <div class="section-content">
+        <h2>Education</h2>
+        <li>Bsc.computer science </li>
+        
+        <li>Webpage development course at IBM</li>
+        <p>At CHIKKANNA GOVT ARTS AND SCIENCE COLLEGE</p>
+    </div>        
+
+     
+
+ </section>
+
+ <section id="Skills">
+    <div class="section-content">
+        <h2>skills</h2>
+        <ui>
+            <li>PYTHON</li>
+            <li>C,C++</li>
+            <li>VISUAL BASIC</li>
+            <li>HTML</li>
+            
+        </ui>
+    </div> 
+ </section>
+ 
+ <section id="Special Activity">
+    <div class="section-content">
+        <h2>Special Activity</h2>
+        <p>NATIONAL CADETS CORPS [NCC]</p>
+
+        
+        
+            
+        <a href="https://drive.google.com/file/d/1mjtsehMvisYMtEhZqUYqaMEMTJhQHD_w/view?usp=drivesdk"class="download-button">B CERTIFICATE cv</a>
+    </div>       
+ </section">
+
+ <section id="Resume">
+    <center>
+    <div class="section-content">
+        <h2>Resume</h2>
+        <a href="https://drive.google.com/file/d/1n5BLvwbtdeQydFnhEvir6780wuVc-5Ez/view?usp=drivesdk"class="download-button">download cv</a>
+    </div>
+    </center>
+   /section>
+
+   <footer>
+       <p>&copy; 2023 SUDHAKARAN R</p>
+   </footer>
+
+        <script>
+            // Smooth scrolling to section when clicking on navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click',function(e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo{{
+                            top:targetElement.offsetTop,
+                            behavior:'smooth'
+                        }};
+                    }
+                }};
+            
+        </script>
+     </body>
+   </html>      
